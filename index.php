@@ -2,8 +2,8 @@
 
 	// array used to translate monthnumbers to dutch monthnames
 	$monthNames = array(
-		'Onbekend', 'Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus',
-		'September', 'Oktober', 'November', 'December'
+		'onbekend', 'januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus',
+		'september', 'oktober', 'november', 'december'
 	);
 
 ?>
@@ -54,7 +54,7 @@
 		$id =  $birthday['id'];
 
 		echo '<p>
-		<a href="edit.php?id=' . $id . '">' . $birthday['person'] . '</a>
+		<a href="edit.php?id=' . $id . '">' . $birthday['person'] . ' (' . $birthday['year'] . ')</a>
 		<a href="delete.php?id=' . $id . '">x</a></p>';
 
 		$lastMonth = $birthday['month'];
