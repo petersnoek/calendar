@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS `calendar`;
+CREATE DATABASE IF NOT EXISTS `calendar`;
+USE `calendar`;
+
+CREATE TABLE `birthdays` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`person` VARCHAR(255) NOT NULL,
+	`day` TINYINT(4) NOT NULL,
+	`month` TINYINT(4) NOT NULL,
+	`year` SMALLINT(6) NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+);
